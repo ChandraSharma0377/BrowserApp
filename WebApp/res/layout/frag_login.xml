@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/adminlogin"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/admin" />
+
+        <EditText
+            android:id="@+id/edtpwd"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/adminlogin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/textbox_bg"
+            android:hint="Please enter password"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edtpwd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:text="LOG IN"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
